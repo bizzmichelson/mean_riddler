@@ -1,6 +1,6 @@
 myApp.controller('RiddleController', function(RiddleService){ // $http? !!!!!!!
     var vm = this;
-
+    RiddleService.getRiddles();
     console.log('RiddleController');
 
     vm.addRiddle = function(){
