@@ -1,0 +1,14 @@
+var myApp = angular.module('myApp', ['ngRoute']);
+console.log('myApp sourced');
+
+myApp.config(function ($routeProvide) {
+    $routeProvider.when('/', {
+        templateUrl: 'views/addriddle.html',
+        controller: 'RiddleController as RC'
+    }).when('/viewriddle', {
+        templateUrl: 'views/viewriddle.html',
+        controller: 'RiddleController as RC'
+    }).otherwise({
+        redirectTo: '/'
+    });
+});
