@@ -1,7 +1,7 @@
 var myApp = angular.module('myApp', ['ngRoute']);
 console.log('myApp sourced');
 
-myApp.config(function ($routeProvide) {
+myApp.config(function ($routeProvider) {
     $routeProvider.when('/', {
         templateUrl: 'views/addriddle.html',
         controller: 'RiddleController as RC'
