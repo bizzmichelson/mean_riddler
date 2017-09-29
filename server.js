@@ -1,8 +1,11 @@
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
-var path = require('path');
 
+//routes
+var indexRoute = require('./modules/routes/indexrouter');
+
+app.use('/', indexRoute);
 var port = 6421; 
 
 app.listen(port, function() {
