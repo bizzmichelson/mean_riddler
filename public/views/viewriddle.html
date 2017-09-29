@@ -1,0 +1,11 @@
+<section id="viewRiddle">
+    <div ng-repeat="riddle in RC.handfulOfRiddles.riddles">
+            <div>Setup: {{riddle.setup}}</div>
+            <div>Punchline: {{riddle.punchline}}</div>
+            <button ng-click="RC.toggleRiddle()">Show punchline</button>            
+            <div>Creator: {{riddle.creator}}</div>
+            <button ng-click="RC.previousRiddle()">Previous</button>
+            <h1>Riddle: X/X</h1>    
+            <button ng-click="RC.nextRiddle()">Next</button>
+        <div>
+</section>

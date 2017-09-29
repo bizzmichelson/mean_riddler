@@ -17,7 +17,9 @@ router.use(bodyParser.json());
 
 router.get('/', function(req, res){
     console.log('/riddle gotten');
-    res.sendStatus(200);
+    riddleModel.find().then(function (data) {
+        res.send(data);
+    });
 });
 
 router.post('/', function(req, res){

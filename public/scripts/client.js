@@ -5,7 +5,7 @@ myApp.config(function ($routeProvider) {
     $routeProvider.when('/', {
         templateUrl: 'views/addriddle.html',
         controller: 'RiddleController as RC'
-    }).when('/viewriddle', {
+    }).when('/riddle', {
         templateUrl: 'views/viewriddle.html',
         controller: 'RiddleController as RC'
     }).otherwise({

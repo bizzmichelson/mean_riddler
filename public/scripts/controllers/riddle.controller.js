@@ -12,4 +12,13 @@ myApp.controller('RiddleController', function(RiddleService){ // $http? !!!!!!!
         };
         RiddleService.addRiddle(riddleToAdd);
     };
+
+    vm.handfulOfRiddles = RiddleService.riddleStuff;
+
+    // vm.riddleGrabber = function() {
+    //     console.log('in RIDDLE GRABBER');
+    //     vm.riddlesToSend = {
+
+    //     }
+    // }
 })

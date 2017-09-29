@@ -9,6 +9,7 @@ myApp.service('RiddleService', function($http){
         url: '/riddle'
     }).then(function(response){
         console.log('response', response);
+        sv.riddleStuff = {riddles: response.data};
     });
     }
 
